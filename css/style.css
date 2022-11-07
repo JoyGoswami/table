@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --container-heading-color: #2d5873;
+  --first-box-border-btn-bg-color: #b3df40;
+  --second-box-border-btn-bg-color: #7fd154;
+  --third-box-border-btn-bg-color: #45cea1;
+  --fourth-box-border-btn-bg-color: #52ced8;
+  --plan-details-color: #7c7c7c;
+  --shadow-color: #474747;
+}
+
+body {
+  background: url("../images/bg_imaget.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--main-font-family);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+}
+
+.m-30 {
+  margin: 40px 0;
+}
+
+span {
+  font-weight: 700;
+}
+
+button {
+  padding: 16px 32px;
+  border: none;
+  outline: none;
+  background-color: var(--first-box-border-btn-bg-color);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-two {
+  background-color: var(--second-box-border-btn-bg-color);
+}
+.btn-three {
+  background-color: var(--third-box-border-btn-bg-color);
+}
+.btn-four {
+  background-color: var(--fourth-box-border-btn-bg-color);
+}
+
+.container {
+  height: 90%;
+  width: 90%;
+}
+
+.container h1 {
+  color: var(--container-heading-color);
+  text-align: center;
+}
+
+.card-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 272.69px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -5px 4px 2px var(--shadow-color);
+}
+
+.heading,
+.heading-two,
+.heading-three,
+.heading-four {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid var(--first-box-border-btn-bg-color);
+  position: relative;
+}
+
+.heading-two {
+  border-bottom: 10px solid var(--second-box-border-btn-bg-color);
+}
+
+.heading-three {
+  border-bottom: 10px solid var(--third-box-border-btn-bg-color);
+}
+
+.heading-four {
+  border-bottom: 10px solid var(--fourth-box-border-btn-bg-color);
+}
+
+.heading::after,
+.heading-two::after,
+.heading-three::after,
+.heading-four::after {
+  content: "";
+  height: 10px;
+  width: 100%;
+  border-bottom: 10px dotted var(--first-box-border-btn-bg-color);
+  position: absolute;
+  top: 105px;
+}
+
+.heading-two::after {
+  border-bottom: 10px dotted var(--second-box-border-btn-bg-color);
+}
+.heading-three::after {
+  border-bottom: 10px dotted var(--third-box-border-btn-bg-color);
+}
+.heading-four::after {
+  border-bottom: 10px dotted var(--fourth-box-border-btn-bg-color);
+}
+
+.price-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.price-container .price {
+  font-size: 3rem;
+}
+
+.price-container .plan-details {
+  color: var(--plan-details-color);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
